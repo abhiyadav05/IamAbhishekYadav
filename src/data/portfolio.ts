@@ -92,6 +92,23 @@ export const portfolioData = {
   },
   projects: [
     {
+      title: "RailInfo — Live Train Tracking Web App",
+      description:
+        "Live train-tracking web app that shows a train's real-time location on an interactive map, combining GPS, weather, and elevation data from multiple external APIs as the train moves.",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "MapLibre GL",
+        "Turf.js",
+        "Zustand",
+        "TanStack Query",
+        "Framer Motion",
+      ],
+      githubUrl: "https://github.com/abhiyadav05/railinfo", // Replace with your actual repo link
+      liveUrl: "https://rail-info-iota.vercel.app/", // Replace with your actual live link
+    },
+    {
       title: "Hostly — Self-Hosted Deployment Platform",
       description:
         "Automated deployment platform where users paste a GitHub repo URL, and Hostly builds, containerizes with Docker, and deploys it live via AWS ECS/ECR with zero manual effort.",
@@ -126,24 +143,6 @@ export const portfolioData = {
       ],
       githubUrl: "https://github.com/abhiyadav05/My-GPT",
       liveUrl: "https://realtime-chat-image-generator.vercel.app/", // Replace with your live link if applicable
-    },
-    {
-      title: "Zorvyn Finance",
-      description:
-        "A role-based finance management platform with secure JWT authentication, featuring Admin and Analyst dashboards. Admins can review and approve finance requests, manage users, and monitor transactions, while Analysts gain real-time financial insights through interactive Chart.js dashboards, reports, and performance analytics for data-driven decision-making.",
-      tags: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "JWT",
-        "Chart.js",
-        "Role-Based Access Control (RBAC)",
-        "REST API",
-        "Tailwind CSS",
-      ],
-      githubUrl: "https://github.com/abhiyadav05/Assignment-Zorvyn",
-      liveUrl: "https://zorvyn-fintech-finance.vercel.app/",
     },
     {
       title: "Loan Management System",
