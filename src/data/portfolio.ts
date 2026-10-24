@@ -38,20 +38,19 @@ export const portfolioData = {
     {
       role: "Full Stack Developer Intern",
       company: "DigiGo Plus Marketing Pvt. Ltd.",
-      duration: "July 2026 — Present",
+      duration: "July 2026 — Sept 2026",
       location: "Remote",
       highlights: [
-        "Developed and maintained a responsive healthcare web application using Next.js, Tailwind CSS, and shadcn/ui, implementing 15+ UI features across modules.",
-        "Integrated 10+ Django REST Framework APIs with frontend components and SQLite DB, improving the reliability by 20%.",
-        "Implemented Zod-based client-side validation across multiple forms, reducing invalid form submissions by 35%.",
-        "Resolved 20+ UI bugs and managed 30+ tasks using Git, GitHub, and Jira, improving overall sprint delivery by 15%.",
+        "Developed responsive healthcare web application modules using Next.js, Tailwind CSS, and shadcn/ui, implementing 15+ UI features with embedded AI capabilities.",
+        "Integrated 10+ Django REST Framework APIs with frontend components and the SQLite database, ensuring seamless data flow and improving application reliability by 20%.",
+        "Collaborated with the AI team to develop a healthcare support AI agent, fine-tuning LLMs on specialized datasets, setting up vector embeddings for retrieval, and building web search tools to deliver precise, context-aware answers.",
+        "Implemented Zod-based validation reducing invalid submissions by 35%, and managed 30+ tasks using Git, GitHub, and Jira, improving sprint delivery by 15%.",
       ],
     },
   ],
   skills: {
     languages: [
       "C/C++",
-      "Java",
       "Python",
       "JavaScript",
       "TypeScript",
@@ -89,6 +88,14 @@ export const portfolioData = {
       "System Design (LLD/HLD)",
       "Distributed Systems",
     ],
+    Agentic: [
+      "Retrieval-Augmented Generation (RAG)",
+      "Large Language Models (LLMs)",
+      "LangChain",
+      "LangGraph",
+      "Groq",
+      "OpenAI API",
+    ],
   },
   projects: [
     {
@@ -104,6 +111,9 @@ export const portfolioData = {
         "Zustand",
         "TanStack Query",
         "Framer Motion",
+        "LangChain",
+        "LangGraph",
+        "Groq",
       ],
       githubUrl: "https://github.com/abhiyadav05/railinfo", // Replace with your actual repo link
       liveUrl: "https://rail-info-iota.vercel.app/", // Replace with your actual live link

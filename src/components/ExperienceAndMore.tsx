@@ -137,7 +137,7 @@ export default function ExperienceAndMore() {
                 Max Rating: <strong>1858</strong> (Knight Badge)
               </p>
               <p className="text-xs text-zinc-600 dark:text-zinc-400">
-                Top 6.2% globally | 750+ problems solved
+                Top 6.2% globally | 950+ problems solved
               </p>
             </div>
             
