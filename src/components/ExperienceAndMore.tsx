@@ -5,7 +5,8 @@ import {
   HiOutlineAcademicCap, 
   HiOutlineTrophy, 
   HiOutlineCodeBracket,
-  HiOutlineArrowUpRight 
+  HiOutlineArrowUpRight,
+  HiOutlineDocumentCheck
 } from 'react-icons/hi2';
 
 export default function ExperienceAndMore() {
@@ -17,45 +18,63 @@ export default function ExperienceAndMore() {
     <div className="space-y-12 pt-8" id="experience">
       
       {/* 1. Work Experience */}
-      {experiences.length > 0 && (
-        <section className="space-y-6">
-          <div className="flex items-center gap-3">
-            <HiOutlineBriefcase className="w-8 h-8 text-zinc-900 dark:text-white" />
-            <h2 className="text-4xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
-              Work Experience.
-            </h2>
-          </div>
+{experiences.length > 0 && (
+  <section className="space-y-6">
+    <div className="flex items-center gap-3">
+      <HiOutlineBriefcase className="w-8 h-8 text-zinc-900 dark:text-white" />
+      <h2 className="text-4xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
+        Work Experience.
+      </h2>
+    </div>
 
-          <div className="space-y-6">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl border border-zinc-900 dark:border-zinc-300 bg-zinc-100/80 dark:bg-zinc-900/50 space-y-4"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div>
-                    <h3 className="text-xl font-bold text-zinc-900 dark:text-white">
-                      {exp.role}
-                    </h3>
-                    <p className="text-sm font-semibold text-indigo-600 dark:text-indigo-400">
-                      {exp.company} • {exp.location}
-                    </p>
-                  </div>
-                  <span className="px-3 py-1 rounded-full text-xs font-medium border border-zinc-900/20 dark:border-zinc-700 bg-zinc-200/60 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 w-fit">
-                    {exp.duration}
-                  </span>
-                </div>
-
-                <ul className="space-y-2 text-sm text-zinc-800 dark:text-zinc-200 list-disc list-inside leading-relaxed">
-                  {exp.highlights?.map((point, pIdx) => (
-                    <li key={pIdx}>{point}</li>
-                  ))}
-                </ul>
+    <div className="space-y-6">
+      {experiences.map((exp, index) => (
+        <div
+          key={index}
+          className="p-6 rounded-2xl border border-zinc-900 dark:border-zinc-300 bg-zinc-100/80 dark:bg-zinc-900/50 space-y-4"
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            {/* Left: role + company, with certificate button on their right */}
+            <div className="flex flex-wrap items-center gap-3">
+              <div>
+                <h3 className="text-xl font-bold text-zinc-900 dark:text-white">
+                  {exp.company}
+                </h3>
+                <p className="text-sm font-semibold text-indigo-600 dark:text-indigo-400">
+                  {exp.role} • {exp.location}
+                </p>
               </div>
-            ))}
+
+              {exp.certificateUrl && (
+                <a
+                  href={exp.certificateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-zinc-900 dark:border-zinc-200 text-xs font-medium text-zinc-900 dark:text-white hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all cursor-pointer w-fit"
+                >
+                  <HiOutlineDocumentCheck className="w-4 h-4" />
+                  <span>Completion-Certificate</span>
+                  <HiOutlineArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              )}
+            </div>
+
+            {/* Right: duration */}
+            <span className="px-3 py-1 rounded-full text-xs font-medium border border-zinc-900/20 dark:border-zinc-700 bg-zinc-200/60 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 w-fit">
+              {exp.duration}
+            </span>
           </div>
-        </section>
-      )}
+
+          <ul className="space-y-2 text-sm text-zinc-800 dark:text-zinc-200 list-disc list-inside leading-relaxed">
+            {exp.highlights?.map((point, pIdx) => (
+              <li key={pIdx}>{point}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
 
       {/* 2. Education */}
       {educations.length > 0 && (

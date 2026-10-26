@@ -37,9 +37,10 @@ export const portfolioData = {
   experience: [
     {
       role: "Full Stack Developer Intern",
-      company: "DigiGo Plus Marketing Pvt. Ltd.",
+      company: "Nexopsdev Technologies",
       duration: "July 2026 — Sept 2026",
       location: "Remote",
+      certificateUrl: "https://drive.google.com/file/d/17ugAEhYcZk9zr_aqPmjUGz2x-SLdAcpq/view?usp=sharing",
       highlights: [
         "Developed responsive healthcare web application modules using Next.js, Tailwind CSS, and shadcn/ui, implementing 15+ UI features with embedded AI capabilities.",
         "Integrated 10+ Django REST Framework APIs with frontend components and the SQLite database, ensuring seamless data flow and improving application reliability by 20%.",
